@@ -1,0 +1,6 @@
+%MyLength(List, Result)
+%it is true if Result inify with the length of list
+
+myLength([], 0).
+myLength(Head|Tail, ) :-
+myLength(Tail, Result).

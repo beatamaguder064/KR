@@ -1,0 +1,33 @@
+Knowledge Represtntation
+if the sun is shining -> go to the beach
+(antecedent) -> (consequent)
+
+Programic Paradigms
+- declarative (Prolog. Haskell...)
+- imperative (C, C++, Java, Python...) 99% of cofe in the world
+
+Prolog is used to create artificial intelligence. We only use Horn Clauses (a and b and c -> d)
+
+Variables start with capital letters. The scope of variables in Prolog is a sentence.
+
+Unification (=), terms unify if:
+- there are no variables, terms are identical (ex. 1 + 1 = 1 + 1. true, but 1 + 1 = 2. false), but there are some exceptions
+- if there are variables, two terms unify if is possible to replace veriables for something that will make terms identical
+(ex. X = 1 + 1. -> true when X takes the value of 1 + 1.
+X = 2, X = 1 + 1. -> false
+X = 1 + 1, 2 is X. -> true when X takes the value of 1 + 1.)
+
+Induction Principle
+We want to demonstrate a property P if it is true for all the elements of set S.
+Elements in S have to be put in order.
+1. P is true for n0
+2. For the rest elements (n>n0), if P(n-1) -> P(n)
+ex. natural(n-1) -> natural(n). in Prolog: natural(N) :- N>1, N2 is N-1, natural(N2).
+
+Lists
+[1,2,3,4,5] or even []
+
+
+
+
+
