@@ -17,7 +17,7 @@ Unification (=), terms unify if:
 X = 2, X = 1 + 1. -> false
 X = 1 + 1, 2 is X. -> true when X takes the value of 1 + 1.)
 
-Induction Principle
+Induction Principle (Mathematical Induction)
 We want to demonstrate a property P if it is true for all the elements of set S.
 Elements in S have to be put in order.
 1. P is true for n0
@@ -27,7 +27,12 @@ ex. natural(n-1) -> natural(n). in Prolog: natural(N) :- N>1, N2 is N-1, natural
 Lists
 [1,2,3,4,5] or even []
 
+Other
+- append - cutting lists into parts
+- ? before variables - you can put a value there, but it´s not neccessary
 
-
-
+State Problem Games
+1. Represent the state - state(_,_)
+2. Create movements
+3. Create the path to solution
 
